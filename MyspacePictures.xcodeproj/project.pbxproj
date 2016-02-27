@@ -17,6 +17,8 @@
 		9A2F37871C8131E400AA3AE6 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F37861C8131E400AA3AE6 /* PostsViewController.swift */; };
 		9A2F37891C81349A00AA3AE6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F37881C81349A00AA3AE6 /* ProfileViewController.swift */; };
 		9A2F378B1C813B4E00AA3AE6 /* PhotoSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F378A1C813B4E00AA3AE6 /* PhotoSelectorViewController.swift */; };
+		9A727B421C824FB80069DE90 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A727B411C824FB80069DE90 /* Post.swift */; };
+		9A727B461C825ACF0069DE90 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A727B451C825ACF0069DE90 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		9A2F37861C8131E400AA3AE6 /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		9A2F37881C81349A00AA3AE6 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9A2F378A1C813B4E00AA3AE6 /* PhotoSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectorViewController.swift; sourceTree = "<group>"; };
+		9A727B411C824FB80069DE90 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		9A727B451C825ACF0069DE90 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		DAF5741B8C8B366323816304 /* Pods_MyspacePictures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyspacePictures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A5AB15EC0E1E05C1418569 /* Pods-MyspacePictures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyspacePictures.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyspacePictures/Pods-MyspacePictures.debug.xcconfig"; sourceTree = "<group>"; };
 		FE71AAC6CC6B515455C05311 /* Pods-MyspacePictures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyspacePictures.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyspacePictures/Pods-MyspacePictures.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				9A2F37861C8131E400AA3AE6 /* PostsViewController.swift */,
 				9A2F37881C81349A00AA3AE6 /* ProfileViewController.swift */,
 				9A2F378A1C813B4E00AA3AE6 /* PhotoSelectorViewController.swift */,
+				9A727B411C824FB80069DE90 /* Post.swift */,
+				9A727B451C825ACF0069DE90 /* PostCell.swift */,
 			);
 			path = MyspacePictures;
 			sourceTree = "<group>";
@@ -227,7 +233,9 @@
 				9A2F37851C8125AE00AA3AE6 /* LoginViewController.swift in Sources */,
 				9A2F37891C81349A00AA3AE6 /* ProfileViewController.swift in Sources */,
 				9A2F37751C811D7700AA3AE6 /* ViewController.swift in Sources */,
+				9A727B421C824FB80069DE90 /* Post.swift in Sources */,
 				9A2F37731C811D7700AA3AE6 /* AppDelegate.swift in Sources */,
+				9A727B461C825ACF0069DE90 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
