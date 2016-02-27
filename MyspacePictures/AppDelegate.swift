@@ -7,16 +7,46 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var storyboard = UIStoryboard(name: "Main", bundle: nil)
+    
+    var loggedIn = false
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        Parse.initializeWithConfiguration(
+            ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
+                configuration.applicationId = "MyspacePictures"
+                configuration.clientKey = "wowowowowowowow"
+                configuration.server = "https://hidden-meadow-28498.herokuapp.com/parse"
+            })
+        )
+        
+        if PFUser.currentUser() != nil {
+            // if there is a logged in user then load the home view controller
+            loggedIn = true;
+            let vc = storyboard.instantiateViewControllerWithIdentifier("TabBarController") as UIViewController
+            window?.rootViewController = vc
+        }
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "userDidLogout", name: "userDidLogoutNotification", object: nil)
+        
         return true
+    }
+    
+    func userDidLogout() {
+        print("UserDidLogout")
+        if loggedIn {
+            let vc = storyboard.instantiateViewControllerWithIdentifier("loggingView") as UIViewController
+            window?.rootViewController = vc
+        } else {
+            window?.rootViewController?.dismissViewControllerAnimated(true, completion: nil)
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {

@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E632724867949ADEA940196 /* Pods_MyspacePictures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF5741B8C8B366323816304 /* Pods_MyspacePictures.framework */; };
 		9A2F37731C811D7700AA3AE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F37721C811D7700AA3AE6 /* AppDelegate.swift */; };
 		9A2F37751C811D7700AA3AE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F37741C811D7700AA3AE6 /* ViewController.swift */; };
 		9A2F37781C811D7700AA3AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F37761C811D7700AA3AE6 /* Main.storyboard */; };
 		9A2F377A1C811D7700AA3AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F37791C811D7700AA3AE6 /* Assets.xcassets */; };
 		9A2F377D1C811D7700AA3AE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F377B1C811D7700AA3AE6 /* LaunchScreen.storyboard */; };
+		9A2F37851C8125AE00AA3AE6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F37841C8125AE00AA3AE6 /* LoginViewController.swift */; };
+		9A2F37871C8131E400AA3AE6 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F37861C8131E400AA3AE6 /* PostsViewController.swift */; };
+		9A2F37891C81349A00AA3AE6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F37881C81349A00AA3AE6 /* ProfileViewController.swift */; };
+		9A2F378B1C813B4E00AA3AE6 /* PhotoSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F378A1C813B4E00AA3AE6 /* PhotoSelectorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,13 @@
 		9A2F37791C811D7700AA3AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A2F377C1C811D7700AA3AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A2F377E1C811D7700AA3AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A2F37841C8125AE00AA3AE6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9A2F37861C8131E400AA3AE6 /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		9A2F37881C81349A00AA3AE6 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9A2F378A1C813B4E00AA3AE6 /* PhotoSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectorViewController.swift; sourceTree = "<group>"; };
+		DAF5741B8C8B366323816304 /* Pods_MyspacePictures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyspacePictures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A5AB15EC0E1E05C1418569 /* Pods-MyspacePictures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyspacePictures.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyspacePictures/Pods-MyspacePictures.debug.xcconfig"; sourceTree = "<group>"; };
+		FE71AAC6CC6B515455C05311 /* Pods-MyspacePictures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyspacePictures.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyspacePictures/Pods-MyspacePictures.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E632724867949ADEA940196 /* Pods_MyspacePictures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CA07A77416796F3D3631E1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5741B8C8B366323816304 /* Pods_MyspacePictures.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A2F37661C811D7700AA3AE6 = {
 			isa = PBXGroup;
 			children = (
 				9A2F37711C811D7700AA3AE6 /* MyspacePictures */,
 				9A2F37701C811D7700AA3AE6 /* Products */,
+				CEAD42081898E90DB776E2BD /* Pods */,
+				3CA07A77416796F3D3631E1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +83,21 @@
 				9A2F37791C811D7700AA3AE6 /* Assets.xcassets */,
 				9A2F377B1C811D7700AA3AE6 /* LaunchScreen.storyboard */,
 				9A2F377E1C811D7700AA3AE6 /* Info.plist */,
+				9A2F37841C8125AE00AA3AE6 /* LoginViewController.swift */,
+				9A2F37861C8131E400AA3AE6 /* PostsViewController.swift */,
+				9A2F37881C81349A00AA3AE6 /* ProfileViewController.swift */,
+				9A2F378A1C813B4E00AA3AE6 /* PhotoSelectorViewController.swift */,
 			);
 			path = MyspacePictures;
+			sourceTree = "<group>";
+		};
+		CEAD42081898E90DB776E2BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4A5AB15EC0E1E05C1418569 /* Pods-MyspacePictures.debug.xcconfig */,
+				FE71AAC6CC6B515455C05311 /* Pods-MyspacePictures.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A2F37811C811D7700AA3AE6 /* Build configuration list for PBXNativeTarget "MyspacePictures" */;
 			buildPhases = (
+				F023D80CFA74E9002C241E4C /* Check Pods Manifest.lock */,
 				9A2F376B1C811D7700AA3AE6 /* Sources */,
 				9A2F376C1C811D7700AA3AE6 /* Frameworks */,
 				9A2F376D1C811D7700AA3AE6 /* Resources */,
+				3EF40072A517ED625D75C71C /* Embed Pods Frameworks */,
+				AE149A6B31F96F182FF97672 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +169,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EF40072A517ED625D75C71C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyspacePictures/Pods-MyspacePictures-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE149A6B31F96F182FF97672 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyspacePictures/Pods-MyspacePictures-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F023D80CFA74E9002C241E4C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A2F376B1C811D7700AA3AE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A2F378B1C813B4E00AA3AE6 /* PhotoSelectorViewController.swift in Sources */,
+				9A2F37871C8131E400AA3AE6 /* PostsViewController.swift in Sources */,
+				9A2F37851C8125AE00AA3AE6 /* LoginViewController.swift in Sources */,
+				9A2F37891C81349A00AA3AE6 /* ProfileViewController.swift in Sources */,
 				9A2F37751C811D7700AA3AE6 /* ViewController.swift in Sources */,
 				9A2F37731C811D7700AA3AE6 /* AppDelegate.swift in Sources */,
 			);
@@ -247,6 +338,7 @@
 		};
 		9A2F37821C811D7700AA3AE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A5AB15EC0E1E05C1418569 /* Pods-MyspacePictures.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyspacePictures/Info.plist;
@@ -258,6 +350,7 @@
 		};
 		9A2F37831C811D7700AA3AE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE71AAC6CC6B515455C05311 /* Pods-MyspacePictures.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyspacePictures/Info.plist;
@@ -286,6 +379,7 @@
 				9A2F37831C811D7700AA3AE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
