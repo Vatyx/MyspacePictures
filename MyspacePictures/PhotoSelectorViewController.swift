@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class PhotoSelectorViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
@@ -49,9 +50,11 @@ class PhotoSelectorViewController: UIViewController, UIImagePickerControllerDele
     @IBAction func postImageAction(sender: AnyObject) {
         if photoView.image != nil {
             print("I'm posting")
+            MBProgressHUD.showHUDAddedTo(self.view, animated: true)
             Post.postUserImage(photoView.image!, withCaption: captionText.text) { (flag: Bool, error: NSError?) -> Void in
                 if error == nil {
                     print("Image Posted Successfully!")
+                    MBProgressHUD.hideHUDForView(self.view, animated: true)
                     self.tabBarController?.selectedIndex = 0
                     
                     let alertController = UIAlertController(title: "Posted!", message: "Your image has been posted successfully", preferredStyle: UIAlertControllerStyle.Alert)
