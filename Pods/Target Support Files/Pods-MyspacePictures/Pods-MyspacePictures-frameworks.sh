@@ -87,9 +87,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-MyspacePictures/Bolts.framework"
   install_framework "Pods-MyspacePictures/MBProgressHUD.framework"
   install_framework "Pods-MyspacePictures/Parse.framework"
+  install_framework "Pods-MyspacePictures/RandomColorSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-MyspacePictures/Bolts.framework"
   install_framework "Pods-MyspacePictures/MBProgressHUD.framework"
   install_framework "Pods-MyspacePictures/Parse.framework"
+  install_framework "Pods-MyspacePictures/RandomColorSwift.framework"
 fi

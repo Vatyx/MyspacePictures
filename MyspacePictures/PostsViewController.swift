@@ -8,12 +8,14 @@
 
 import UIKit
 import Parse
+import RandomColorSwift
 
 class PostsViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
     var posts: [Post]!
+    var colors: [UIColor]!
     var profileImage: UIImage?
     
     override func viewDidLoad() {
@@ -27,6 +29,7 @@ class PostsViewController: UIViewController, UITableViewDataSource {
         Post.fetchPostsWithCompletion { (posts: [PFObject]?, error: NSError?) -> () in
             if error == nil{
                 self.posts = Post.createPostArray(posts!)
+                self.colors = randomColorsCount(posts!.count, hue: .Blue, luminosity: .Light)
                 self.tableView.reloadData()
             } else {
                 print("No posts found")
@@ -51,6 +54,8 @@ class PostsViewController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("PostCell", forIndexPath: indexPath) as! PostCell
         
         cell.post = posts[indexPath.row]
+        
+        cell.randomColorView.backgroundColor = colors[indexPath.row]
         
         let tap1 = UITapGestureRecognizer(target: self, action: "viewProfile:")
         let tap2 = UITapGestureRecognizer(target: self, action: "viewProfile:")
@@ -110,6 +115,18 @@ class PostsViewController: UIViewController, UITableViewDataSource {
 
             }
         }
+    }
+    
+    func getRandomColor() -> UIColor{
+        
+        let randomRed:CGFloat = CGFloat(drand48())
+        
+        let randomGreen:CGFloat = CGFloat(drand48())
+        
+        let randomBlue:CGFloat = CGFloat(drand48())
+        
+        return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+        
     }
     
 

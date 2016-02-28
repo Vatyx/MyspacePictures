@@ -43,6 +43,15 @@ class Post: NSObject {
 
     }
     
+    class func fetchSearchWithCompletion(search: String, completion:([PFObject]?, NSError?) -> ()){
+        let query = PFQuery(className: "Post")
+        query.whereKey("caption", containsString: search)
+        query.orderByDescending("createdAt")
+        query.includeKey("author")
+        query.limit = 20
+        query.findObjectsInBackgroundWithBlock(completion)
+    }
+    
     class func createPostArray(array: [PFObject]) -> [Post] {
         var posts = [Post]()
         for obj in array {

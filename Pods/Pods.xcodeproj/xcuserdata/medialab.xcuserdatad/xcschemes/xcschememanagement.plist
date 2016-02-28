@@ -24,10 +24,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RandomColorSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>9960223F3D64F3FEED3D4942671EEFB7</key>
+		<key>7790D03D1754CA3A92F6A6658A4FCE59</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -38,6 +43,11 @@
 			<true/>
 		</dict>
 		<key>BCA053B6430690326435042FEB61B458</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BD329D5BEDF8447601F412BA85149914</key>
 		<dict>
 			<key>primary</key>
 			<true/>

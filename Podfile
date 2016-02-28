@@ -6,5 +6,6 @@ use_frameworks!
 target 'MyspacePictures' do
     pod 'Parse'
     pod 'MBProgressHUD'
+    pod 'RandomColorSwift'
 end
 

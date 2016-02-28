@@ -16,6 +16,8 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var caption: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var createAtLabel: UILabel!
+    @IBOutlet weak var randomColorView: UIView!
+    
     
     var post: Post! {
         didSet {
@@ -51,9 +53,15 @@ class PostCell: UITableViewCell {
             
             caption.text = post.caption
             usernameLabel.text = post.author?.username
-
+            
+//            let date = NSDate()
+//            
             let calendar = NSCalendar.currentCalendar()
             let components = calendar.components([.Day , .Month , .Year], fromDate: post.createdAt!)
+//            
+//            let cal = NSCalendar.currentCalendar()
+//            
+//            let unit:NSCalendarUnit = NSCalendarUnit.Day
             
             createAtLabel.text = "\(components.month)/\(components.day)"
         }
